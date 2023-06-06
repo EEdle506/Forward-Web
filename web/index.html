@@ -1,5 +1,34 @@
-<title>Forward Web</title>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forward Web</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/body.css">
+    <link rel="stylesheet" href="styles/view.css">
+</head>
 <body>
-    <a href="sign-up">Create new account</a>
-    <a href="sign-in">Log in to account</a>
+
+    <header>
+        <div class="header-title">
+            <img class="header-logo" src="assets/logo.svg" alt="Logo">
+            <a href="index.html">orward Messenger</a>
+        </div>
+        <div class="button-container">
+            <button class="rounded-button" onclick="redirectToPage('sign-up.html')">Sing up</button>
+            <button class="rounded-button" onclick="redirectToPage('sign-in.html')">Sing in</button>
+        </div>
+    </header>
+
+    <main>
+        
+    </main>
+
+    <footer>
+        <p>© 2023 Forward Messenger. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
 </body>    
+</html>
