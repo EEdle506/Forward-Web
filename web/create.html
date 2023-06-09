@@ -10,41 +10,42 @@
 </head>
 <body>
 
-    <header>
-        <div class="header-title">
-            <img class="header-logo" src="assets/logo.svg" alt="Logo">
-            <a href="/">orward Messenger</a>
-        </div>
-    </header>
+<header>
+    <div class="header-title">
+        <img class="header-logo" src="assets/logo.svg" alt="Logo">
+        <a href="/">orward Messenger</a>
+    </div>
+</header>
 
-    <main>
-        <div class="main-container">
-            <div class="image-container">
-                <img src="image.jpg" alt="Image" loading="lazy">
-            </div>
-            <div class="form-container">
-                <h2>Create your account</h2>
-                <form action="/account" method="post">
-                    <div class="form-group">
-                        <label for="username">Username</label>
-                        <input type="text" id="username" name="username" placeholder="Enter your username">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Enter your email">
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password" placeholder="Enter your password">
-                    </div>
-                    <div class="button-group">
-                        <button type="submit">Create account</button>
-                        <button type="button" class="signup-button" onclick="redirectToPage('login')">Already have account?</button>
-                    </div>
-                </form>
-            </div>
+<main>
+    <div class="main-container">
+        <div class="image-container">
+            <img src="image.jpg" alt="Image" loading="lazy">
         </div>
-    </main>
-    <script src="scripts/script.js"></script>
+        <div class="form-container">
+            <h2>Create your account</h2>
+            <form action="/account" method="post">
+                <input type="hidden" name="action" value="create">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password">
+                </div>
+                <div class="button-group">
+                    <button type="submit">Sign up</button>
+                    <button type="button" class="signup-button" onclick="redirectToPage('login')">Already have account?</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+<script src="scripts/script.js"></script>
 </body>
 </html>
