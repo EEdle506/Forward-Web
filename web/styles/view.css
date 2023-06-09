@@ -1,10 +1,18 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Make sure the body takes up the full viewport height */
+}
+
 main {
     flex-grow: 1; /* Allow the main content to grow and take up remaining vertical space */
-    overflow-y: auto; /* Enable vertical scrolling if content exceeds the available space */
+    overflow-y: scroll; /* Enable vertical scrolling if content exceeds the available space */
 }
 
 footer {
-    background-color: #333;
+    background-color: #088395;
     color: #fff;
-    padding: 10px;
+    padding: 5px;
 }

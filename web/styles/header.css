@@ -1,10 +1,11 @@
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #088395;
+    color: #fff;
 }
 header a {
     text-decoration: none;
@@ -14,31 +15,49 @@ header h1 {
     margin: 0;
 }
 
+.header-logo {
+    width: 30px;
+    height: 30px;
+}
 .header-title {
     display: flex;
     align-items: center;
     font-size: 28px;
     font-weight: bold;
-}
-.header-logo {
-    width: 30px;
-    height: 30px;
-    margin-right: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .header-title a {
     display: flex;
     align-items: center;
     text-decoration: none;
     margin-left: -5px;
-    margin-bottom: -5px;
 }
+
+.link-container {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.link-container a {
+    font-size: 20px;
+    font-family: 'Segoe UI', serif;
+    transition: transform 0.3s ease;
+}
+.link-container a:hover {
+    background-color: #333;
+    color: #fff;
+    transform: scale(1.2) rotate(10deg);
+}
+
+.link-button
 
 .button-container {
     display: flex;
     gap: 10px;
     justify-content: flex-end;
+    align-items: flex-start;
 }
-
 .rounded-button {
     border-radius: 20px;
     background-color: #fff;
@@ -46,11 +65,15 @@ header h1 {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+    font-family: 'Segoe UI', serif;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 .rounded-button:hover {
     background-color: #333;
     color: #fff;
+}
+.rounded-button:active {
+    animation: button-click 0.3s linear;
 }
 @keyframes button-click {
     0% {
@@ -62,7 +85,4 @@ header h1 {
     100% {
         transform: scale(1);
     }
-}
-.rounded-button:active {
-    animation: button-click 0.3s linear;
 }
