@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=PT+Sans+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap');
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: lightskyblue;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding: 25px;
+    flex-grow: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+footer {
+    background-color: #088395;
+    color: white;
+    padding: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.logo-text {
+    color: white;
+    font-size: 48px;
+    font-family: 'Fjalla One', sans-serif;
+}
+.slogan {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 36px;
+    font-family: 'PT Sans', sans-serif;
+}
+

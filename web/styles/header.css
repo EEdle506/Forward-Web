@@ -1,4 +1,6 @@
-header {
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600&display=swap');
+
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -6,51 +8,77 @@ header {
     padding: 20px;
     background-color: #088395;
     color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-header a {
+.header-container a {
     text-decoration: none;
     color: inherit;
 }
-header h1 {
+.header-container h1 {
     margin: 0;
 }
 
-.header-logo {
-    width: 30px;
-    height: 30px;
+@media (width < 815px) {
+    .header-container {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
+
 .header-title {
     display: flex;
     align-items: center;
     font-size: 28px;
     font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Open Sans', sans-serif;
+    flex-wrap: nowrap;
+}
+.header-title img {
+    width: 30px;
+    height: 30px;
 }
 .header-title a {
     display: flex;
     align-items: center;
     text-decoration: none;
     margin-left: -5px;
+    white-space: nowrap;
+}
+
+@media (width < 365) {
+    .header-title a {
+        flex-wrap: wrap;
+    }
+    .button-container {
+        flex-wrap: wrap;
+    }
 }
 
 .link-container {
     display: flex;
-    align-items: flex-start;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 15px;
+    column-gap: 10px;
 }
 .link-container a {
     font-size: 20px;
-    font-family: 'Segoe UI', serif;
-    transition: transform 0.3s ease;
+    font-family: 'Open Sans', sans-serif;
+    padding: 5px;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
 }
 .link-container a:hover {
     background-color: #333;
     color: #fff;
-    transform: scale(1.2) rotate(10deg);
 }
-
-.link-button
+.link-selected a {
+    color: black;
+    background-color: white;
+}
 
 .button-container {
     display: flex;
@@ -65,8 +93,9 @@ header h1 {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    font-family: 'Segoe UI', serif;
+    font-family: 'Open Sans', sans-serif;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 .rounded-button:hover {
     background-color: #333;

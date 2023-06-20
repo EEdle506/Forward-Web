@@ -1,11 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>About Forward</title>
+    <title>Forward | Про додаток</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header.css">
 </head>
 <body>
+
+<header class="header-container">
+    <div class="header-title">
+        <img class="header-logo" src="assets/logo.svg" alt="F">
+        <a href="/">orward Messenger</a>
+    </div>
+    <div class="link-container">
+        <a href="/download">Завантажити</a>
+        <div class="link-selected"> 
+            <a href="/about">Про месенджер</a>
+        </div>
+    </div>
+    <div class="button-container">
+        <button class="rounded-button" onclick="redirectToPage('login')">Log in</button>
+        <button class="rounded-button" onclick="redirectToPage('create')">Sign up</button>
+    </div>
+</header>
+
+<main>
     
+</main>
+
+<footer>
+    <p>© 2023 Forward Messenger. All rights reserved.</p>
+</footer>
+
+<script src="scripts/lazy-loading.js"></script>
+<script src="scripts/index.js"></script>
+
 </body>
 </html>
