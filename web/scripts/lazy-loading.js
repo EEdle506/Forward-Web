@@ -2,7 +2,7 @@ const blurDivs = document.querySelectorAll(".load-animation")
 
 blurDivs.forEach(div => {
 
-    const img = div.querySelector("img");
+    const img = div.querySelector("img")
 
     function loaded() {
         div.classList.add("loaded")

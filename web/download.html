@@ -10,6 +10,12 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
+    <script defet src="scripts/index.js"></script>
+    <script defer src="scripts/section-showup.js"></script>
+
+    <link rel="stylesheet" href="styles/lazy-loading.css">
+    <script async="true" src="scripts/lazy-loading.js"></script>
+
 </head>
 <body>
     
@@ -22,7 +28,7 @@
         <div class="link-selected"> 
             <a href="/download">Завантажити</a>
         </div>
-        <a href="/about">Про месенджер</a>
+        <a href="/#about">Про месенджер</a>
     </div>
     <div class="button-container">
         <button class="rounded-button" onclick="redirectToPage('login')">Log in</button>
@@ -66,9 +72,6 @@
 <footer>
     <p>© 2023 Forward Messenger. All rights reserved.</p>
 </footer>
-
-<script src="scripts/index.js"></script>
-<script src="scripts/lazy-loading.js"></script>
 
 </body>
 </html>
